@@ -19,17 +19,13 @@ if (temperature < 0) {
 }
 
 
-
-const whichSchool  = function (age) {
-  // For ages 1 to 12 returns Elementary School
-  if(age >= 13 && age < 19){
-    console.log("Secondary School");
-    //For ages 13 to 18 returns Secondary School
-  }else if(age >= 19 && age <= 100){
-    console.log(" LightHouse Labs");
-    //For ages 19 to let's say 100 returns Lighthouse Labs
-  }else if (age >= 1 && age < 13){
-    console.log("Elementary School");
+function whichSchool(age) {
+  if (age < 13) {
+    return "Elementary School";
+  } else if (age >= 13 && age <= 18) {
+    return "Secondary School";
+  } else {
+    return "Lighthouse Labs";
   }
 }
  
