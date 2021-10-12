@@ -28,9 +28,6 @@ function whichSchool(age) {
     return "Lighthouse Labs";
   }
 }
- 
-console.log("I am 19. Which school should I go to?");
-console.log(whichSchool(19));
 
 
 
